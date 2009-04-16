@@ -26,6 +26,13 @@ In app/views/pages/index.json.to_json:
       page.attributes.slice('url', 'views', 'title', 'extract')
     end
 
+## JSONP
+
+If you name your view `.to_jsonp` instead of `.to_json`, it will
+return a JSONP call, using the `callback` parameter for the name of
+the callback.  If no `callback` parameter is given, it just returns
+standard JSON.
+
 ## Copyright
 
 Copyright (c) 2009 George Ogata, released under the MIT license
